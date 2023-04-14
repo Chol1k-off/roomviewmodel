@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/idtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstnametat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Имя"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/idtxt"
+        app:layout_constraintStart_toEndOf="@+id/idtxt"
+        app:layout_constraintTop_toTopOf="@+id/idtxt" />
+
+    <TextView
+        android:id="@+id/lastnametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Фамилия"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/firstnametat"
+        app:layout_constraintStart_toEndOf="@+id/firstnametat"
+        app:layout_constraintTop_toTopOf="@+id/firstnametat" />
+
+    <TextView
+        android:id="@+id/agetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Возраст"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lastnametxt"
+        app:layout_constraintStart_toEndOf="@+id/lastnametxt"
+        app:layout_constraintTop_toTopOf="@+id/lastnametxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
